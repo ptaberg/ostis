@@ -1,0 +1,38 @@
+Myself
+=> nrel_project: ..MyselfProject;;
+
+Daniil_Shunkevich
+=> nrel_main_idtf:
+	[Шункевич Даниил Вячеславович]
+	(* <- lang_ru;; *);
+	[Daniil Shunkevich]
+	(* <- lang_en;; *);
+=> nrel_email: [shunkevichdv@gmail.com];
+<- ui_user;;
+
+Jon_the_Silent
+=> nrel_main_idtf:
+	[Ийон Тихий]
+	(* <- lang_ru;; *);
+	[Jon the Silent]
+	(* <- lang_en;; *);
+=> nrel_email: [jonthesilent@gmail.com];
+<- ui_user;;
+
+..MyselfProject => nrel_developer: Jon_the_Silent;;
+..MyselfProject => nrel_administrator: Daniil_Shunkevich;;
+
+substantive_part_of_the_knowledge_base
+-> substantive_part_of_specific_kb;;
+
+concerted_part_of_kb
+-> concerted_part_of_specific_kb;;
+
+history_of_the_development_of_computer_system
+-> history_of_the_development_of_specific_system;;
+
+computer_system_development_plan
+-> computer_system_development_plan_of_specific_system;;
+
+current_processes_of_computer_system
+-> current_processes_of_specific_computer_system;;
