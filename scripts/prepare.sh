@@ -50,16 +50,16 @@ sed -i -e "s/python3.5-dev/python$python3Version-dev/" ./install_deps_ubuntu.sh
 sed -i -e "s/python3.5-dev/python$python3Version/" ./install_deps_ubuntu.sh
 ./install_deps_ubuntu.sh
 
-sudo apt-get install redis-server
+apt-get install -y redis-server
 
 ./clean_all.sh
 ./make_all.sh
 cd -
 
 prepare "sc-web"
-sudo pip install --default-timeout=100 future
-sudo apt-get install python-dev # required for numpy module
-sudo apt-get install python-setuptools
+pip install --default-timeout=100 future
+apt-get install -y python-dev # required for numpy module
+apt-get install -y python-setuptools
 
 cd ../sc-web/scripts
 
@@ -68,7 +68,7 @@ cd ../sc-web/scripts
 
 cd -
 cd ../sc-web
-npm install
+npm installc
 grunt build
 cd -
 echo -en $green"Copy server.conf"$rst"\n"
